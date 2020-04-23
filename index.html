@@ -325,6 +325,7 @@
                 newMeshes[0].scaling = new BABYLON.Vector3(0.05,0.05,0.05)
                 var e = scene.createDefaultEnvironment();
                 // Creating default environment enables tone mapping so disable for demo
+                e.setMainColor(BABYLON.Color3.White());
                 defaultPipeline.imageProcessing.toneMappingEnabled = false;
             });
         
